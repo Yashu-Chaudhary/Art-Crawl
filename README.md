@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+![onboading](https://github.com/Yashu-Chaudhary/Art-Crawl/assets/137476521/95fb685b-34d4-475d-a826-3bcde70a9103)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
