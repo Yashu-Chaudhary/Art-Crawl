@@ -48,8 +48,10 @@ class OnBoardingScreen extends StatelessWidget {
                             PTexts.artCrawl,
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 70,
-                              fontWeight: FontWeight.bold,
+                              fontSize: 80,
+                              fontFamily: 'Poppins',
+                              fontStyle: FontStyle.italic,
+
                             ),
                           ),
                           const Text(
