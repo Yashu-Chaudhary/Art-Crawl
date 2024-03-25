@@ -12,13 +12,15 @@ class PTexts {
   static const String paris = "Paris";
   static const String placeOfVersailtes = "Place of Versailtes";
   static const String royalResidence = "Royal Residence";
-  static const String musicDeTOrangerie = "Music De TOrangerie";
+  static const String musicDeTOrangerie = "Music De I'Orangerie";
   static const String artMusium = "Art Musium";
   static const String newEvents = "NEW EVENTS";
   static const String discoveringMaltas = "Discovering Malta's";
   static const String baroqueSecrets = "Baroque Secrets";
-  // static const String paris = "Paris";
+  static const String exibesion = "exbision";
   static const String fromPlan30 = "From PLN 30";
 
 
 }
+
+

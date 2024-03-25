@@ -1,6 +1,6 @@
 import 'package:art_crawl/screens/second_screen.dart';
-import 'package:art_crawl/utils/images.dart';
-import 'package:art_crawl/utils/string_text.dart';
+import 'package:art_crawl/utils/constant/images.dart';
+import 'package:art_crawl/utils/constant/string_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -70,7 +70,7 @@ class OnBoardingScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 20),
                           GestureDetector(
-                            onTap: ()=> Get.to(const HomeScreen()),
+                            onTap: ()=> Get.to(() => const HomeScreen()),
                             child: Container(
                                 height: 40,
                                 width: deviceWidth * 0.9,

@@ -1,4 +1,4 @@
-import 'package:art_crawl/utils/string_text.dart';
+import 'package:art_crawl/utils/constant/string_text.dart';
 import 'package:flutter/material.dart';
 
 class PHeader extends StatelessWidget {
