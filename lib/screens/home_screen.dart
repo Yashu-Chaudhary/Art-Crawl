@@ -1,11 +1,13 @@
 import 'package:art_crawl/screens/widgets/circle_avatar_stack.dart';
+import 'package:art_crawl/screens/your%20tickets/your_tickets.dart';
 import 'package:art_crawl/utils/common/container_with_2texts_and_icon.dart';
 import 'package:art_crawl/utils/common/header.dart';
 import 'package:art_crawl/utils/common/widgets/container_button_with_text_and_icon.dart';
-import 'package:art_crawl/utils/common/widgets/date.dart';
+import 'package:art_crawl/utils/common/widgets/date_duration_of_ticket.dart';
 import 'package:art_crawl/utils/constant/images.dart';
 import 'package:art_crawl/utils/constant/string_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -36,11 +38,11 @@ class HomeScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.pink,
                     borderRadius: BorderRadius.circular(20)),
-                child: const Padding(
-                  padding: EdgeInsets.all(12),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
                   child: Column(
                     children: [
-                      Row(
+                      const Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -51,17 +53,19 @@ class HomeScreen extends StatelessWidget {
                           Icon(Icons.flight, color: Colors.white, size: 30)
                         ],
                       ),
-                      SizedBox(height: 30),
-                      Text(
+                      const SizedBox(height: 30),
+                      const Text(
                         PTexts.paris,
                         style: TextStyle(fontSize: 40, color: Colors.white),
                       ),
-                      SizedBox(height: 30),
+                      const SizedBox(height: 30),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          PCircleAvatarStack(),
-                          PContainerButtonWithIcon(
+                          GestureDetector(
+                              onTap: () => Get.to(() => const YourTickets()),
+                              child: const PCircleAvatarStack()),
+                          const PContainerButtonWithIcon(
                             icon: Icons.east,
                             text: PTexts.buyMoreTickets,
                           ),
@@ -130,23 +134,15 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(height: 10),
 
                       //  text, Divider, text
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const PDate(daymonth: '20.10',year: '2013',),
-
-                          // divider
-                          Container(
-                            height: 2,
-                            width: deviceWidth * 0.56,
-                            margin: const EdgeInsets.all(12),
-                            decoration:
-                                const BoxDecoration(color: Colors.black),
-                          ),
-
-                          const PDate(daymonth: '03.03',year: '2014',)
-                        ],
+                      const PDateDurationOFTicker(
+                        startDayMonth: '20.10',
+                        startYear: '2013',
+                        endDayMonth: '03.03',
+                        endYear: '2014',
+                        
                       ),
+
+                      // image
                       const SizedBox(height: 8),
                       Container(
                         height: 310,
@@ -168,4 +164,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

@@ -20,7 +20,16 @@ class PTexts {
   static const String exibesion = "exbision";
   static const String fromPlan30 = "From PLN 30";
 
+  // Your Tickets Page Text
+  static const String yourTickets = 'Your Tickets';
+  static const String renaissanceRevived = 'Renaissance Revived';
+  static const String uffiziGalleryFlorenceItaly = 'Uffizi Gallery, Florence, Italy';
+  static const String artNouveauDelights = 'Art Nouveau Delights';
+  static const String msuiumOfOrsayParisFrance = 'Msuium Of Orsay, Paris, France';
+  static const String theEnchantingArtOfRembrandt = 'The Enchanting Art of Rembrandt';
+  static const String mauritshsisTheHagueNetherLands = 'Mauritshsis, The Hague, NetherLands';
+  // static const String a = '';
+  // static const String a = '';
+  // static const String a = '';
 
 }
-
-

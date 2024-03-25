@@ -1,4 +1,4 @@
-import 'package:art_crawl/screens/second_screen.dart';
+import 'package:art_crawl/screens/home_screen.dart';
 import 'package:art_crawl/utils/constant/images.dart';
 import 'package:art_crawl/utils/constant/string_text.dart';
 import 'package:flutter/material.dart';

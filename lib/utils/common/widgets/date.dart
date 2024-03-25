@@ -5,10 +5,12 @@ class PDate extends StatelessWidget {
     super.key,
     required this.daymonth,
     required this.year,
+    this.color = Colors.black,
   });
 
   final String daymonth;
   final String year;
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,10 +18,11 @@ class PDate extends StatelessWidget {
       children: [
         Text(
           daymonth,
-          style: const TextStyle(fontSize: 20),
+          style: TextStyle(fontSize: 20, color: color),
         ),
         Text(
           year,
+          style: TextStyle(color: color),
         ),
       ],
     );

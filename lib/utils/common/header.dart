@@ -21,11 +21,11 @@ class PHeader extends StatelessWidget {
         Row(
           children: [
             isCircleAvatarImage
-                ?  CircleAvatar(
+                ? CircleAvatar(
                     backgroundImage: image,
                   )
                 : const Text(''),
-            const SizedBox(width: 10),
+            isCircleAvatarImage ? const SizedBox(width: 10) : const Text(""),
             Text(
               text,
               style: const TextStyle(fontSize: 30),
@@ -36,11 +36,16 @@ class PHeader extends StatelessWidget {
           height: 30,
           width: 70,
           decoration: BoxDecoration(
-              color: Colors.grey, borderRadius: BorderRadius.circular(20)),
+            color: Colors.grey,
+            borderRadius: BorderRadius.circular(20),
+          ),
           child: const Center(
-              child: Text(PTexts.menu,
-                  style: TextStyle(color: Colors.white, fontSize: 15))),
-        )
+            child: Text(
+              PTexts.menu,
+              style: TextStyle(color: Colors.white, fontSize: 15),
+            ),
+          ),
+        ),
       ],
     );
   }
