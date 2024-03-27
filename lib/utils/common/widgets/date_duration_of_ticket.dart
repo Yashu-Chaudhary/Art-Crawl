@@ -22,6 +22,7 @@ class PDateDurationOFTicker extends StatelessWidget {
     final deviceWidth = MediaQuery.of(context).size.width;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         PDate(
           daymonth: startDayMonth,
@@ -32,7 +33,7 @@ class PDateDurationOFTicker extends StatelessWidget {
         // divider
         Container(
           height: 2,
-          width: deviceWidth * 0.56,
+          width: deviceWidth * 0.5,
           margin: const EdgeInsets.all(12),
           decoration: BoxDecoration(color: color),
         ),

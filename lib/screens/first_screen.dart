@@ -43,7 +43,7 @@ class OnBoardingScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: deviceHight * 0.6),
+                          const Expanded(child: SizedBox()),
                           const Text(
                             PTexts.artCrawl,
                             style: TextStyle(

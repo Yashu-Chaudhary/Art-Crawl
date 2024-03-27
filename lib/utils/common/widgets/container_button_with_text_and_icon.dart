@@ -21,7 +21,6 @@ class PContainerButtonWithIcon extends StatelessWidget {
       onTap: () {},
       child: Container(
         height: height,
-        width: width,
         decoration: BoxDecoration(
           border: Border.all(width: 2, color: color),
           borderRadius: BorderRadius.circular(20),

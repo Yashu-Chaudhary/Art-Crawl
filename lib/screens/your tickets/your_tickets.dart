@@ -15,11 +15,18 @@ class YourTickets extends StatelessWidget {
           padding: EdgeInsets.all(12.0),
           child: Column(
             children: [
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               PHeader(text: PTexts.yourTickets),
               SizedBox(height: 20),
               // PTicketSlider()
-              PTickets(image: AssetImage(PImages.versalites),title: PTexts.renaissanceRevived,subTitle:  PTexts.uffiziGalleryFlorenceItaly, color: Colors.red,)
+              PTickets(
+                image: AssetImage(PImages.versalites),
+                title: PTexts.renaissanceRevived,
+                subTitle: PTexts.uffiziGalleryFlorenceItaly,
+                color: Colors.red,
+              )
             ],
           ),
         ),

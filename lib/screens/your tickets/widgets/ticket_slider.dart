@@ -4,12 +4,13 @@ import 'package:art_crawl/utils/constant/string_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
+//  make the logic for the swipe the tickets vertically
 class PTicketSlider extends StatelessWidget {
   const PTicketSlider({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final deviceWidth = MediaQuery.of(context).size.width;
+    // final deviceWidth = MediaQuery.of(context).size.width;
     return Swiper(
       itemBuilder: (context, index) {
         return const PTickets(

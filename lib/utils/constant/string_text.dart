@@ -28,7 +28,7 @@ class PTexts {
   static const String msuiumOfOrsayParisFrance = 'Msuium Of Orsay, Paris, France';
   static const String theEnchantingArtOfRembrandt = 'The Enchanting Art of Rembrandt';
   static const String mauritshsisTheHagueNetherLands = 'Mauritshsis, The Hague, NetherLands';
-  // static const String a = '';
+  static const String yourTicket = 'YOUR TICKET';
   // static const String a = '';
   // static const String a = '';
 
