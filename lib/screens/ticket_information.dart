@@ -55,27 +55,34 @@ class TicketInformation extends StatelessWidget {
                         maxLines: 2,
                         style: TextStyle(fontSize: 20),
                       ),
-                      const Text(PTexts.mauritshsisTheHagueNetherLands,style: TextStyle(fontSize: 15),)
+                      const Text(
+                        PTexts.mauritshsisTheHagueNetherLands,
+                        style: TextStyle(fontSize: 15),
+                      )
                     ],
                   ),
                 ),
               ),
               const SizedBox(height: 15),
-              Row(children: [
-                Container(
-                  decoration: const BoxDecoration(color: Colors.grey),
-                  child: const Column(
-                    children: [
-                      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(PTexts.yourTicket),
-                          Icon(Icons.info_outline)
-                        ],
-                      )
-                    ],
-                  ),
-                )
-              ],)
+              Row(
+                children: [
+                  Container(
+                    decoration: const BoxDecoration(color: Colors.grey),
+                    child: const Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(PTexts.yourTicket),
+                            Icon(Icons.info_outline),
+                          ],
+                        ),
+                        SizedBox(height: 20),
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),

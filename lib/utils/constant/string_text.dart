@@ -29,7 +29,7 @@ class PTexts {
   static const String theEnchantingArtOfRembrandt = 'The Enchanting Art of Rembrandt';
   static const String mauritshsisTheHagueNetherLands = 'Mauritshsis, The Hague, NetherLands';
   static const String yourTicket = 'YOUR TICKET';
-  // static const String a = '';
+  static const String a = '';
   // static const String a = '';
 
 }
